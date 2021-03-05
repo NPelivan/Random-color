@@ -17,7 +17,6 @@ export default class Fetch extends Component {
 	setNewColor(color) {
 		this.setState((prevState) => ({
 			color: color,
-			/*colorHistory: [...prevState.colorHistory, color],*/
 		}));
 	}
 
