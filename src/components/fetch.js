@@ -7,6 +7,7 @@ export default class Fetch extends Component {
 
 		this.state = {
 			color: "",
+			colorHistory: [],
 		};
 
 		this.setNewColor = this.setNewColor.bind(this);
@@ -17,6 +18,7 @@ export default class Fetch extends Component {
 	setNewColor(color) {
 		this.setState((prevState) => ({
 			color: color,
+			colorHistory: [...prevState.colorHistory, color],
 		}));
 	}
 

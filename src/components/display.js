@@ -1,6 +1,7 @@
 import React, { Component } from "react";
 import Fetch from "./fetch";
 import HexColor from "./hexColor";
+import ColorHistory from "./colorHistory";
 
 export default class Display extends Fetch {
 	render() {
@@ -22,6 +23,9 @@ export default class Display extends Fetch {
 				</div>
 
 				<button onClick={this.handleButtonClick}>Shuffle Color</button>
+				{!(this.state.color == "") && (
+					<ColorHistory history={this.state.colorHistory} />
+				)}
 			</div>
 		);
 	}

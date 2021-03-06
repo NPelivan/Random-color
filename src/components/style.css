@@ -2,3 +2,16 @@
 	width: 10%;
 	height: 10vh;
 }
+
+.previous {
+	width: 100px;
+	margin-top: 5%;
+	display: block;
+}
+
+.previous-colors {
+	display: grid;
+	grid-template-columns: repeat(10, 1fr);
+	gap: 10px;
+	width: 100%;
+}
